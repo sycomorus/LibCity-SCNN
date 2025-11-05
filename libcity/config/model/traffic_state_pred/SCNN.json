@@ -1,0 +1,29 @@
+{
+  "d_model": 8,
+  "e_layers": 2,
+  "kernel_size": 2,
+  "short_period_len": 8,
+  "cycle_len": 24,
+  "input_window": 24,
+  "output_window": 12,
+
+  "metrics": ["MAE", "RMSE", "MAPE"],
+
+  "scaler": "standard",
+  "load_external": false,
+  "normal_external": false,
+  "ext_scaler": "none",
+  "add_time_in_day": false,
+  "add_day_in_week": false,
+  "pad_with_last_sample": false,
+
+  "max_epoch": 200,
+  "learner": "adam",
+  "learning_rate": 0.0005,
+  "lr_decay": false,
+  "clip_grad_norm": false,
+  "use_early_stop": true,
+  "patience": 5,
+  "train_loss": "mae"
+}
+
