@@ -13,7 +13,11 @@ from libcity.model.traffic_speed_prediction.GMAN import GMAN
 from libcity.model.traffic_speed_prediction.STAGGCN import STAGGCN
 from libcity.model.traffic_speed_prediction.GTS import GTS
 from libcity.model.traffic_speed_prediction.HGCN import HGCN
-from libcity.model.traffic_speed_prediction.STMGAT import STMGAT
+# 可选导入：DGL 不可用时跳过 STMGAT 的加载，避免包级导入失败
+try:
+    from libcity.model.traffic_speed_prediction.STMGAT import STMGAT
+except Exception:
+    pass
 from libcity.model.traffic_speed_prediction.DKFN import DKFN
 from libcity.model.traffic_speed_prediction.STTN import STTN
 from libcity.model.traffic_speed_prediction.D2STGNN import D2STGNN
