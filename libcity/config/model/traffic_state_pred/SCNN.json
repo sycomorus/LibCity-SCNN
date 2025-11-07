@@ -7,7 +7,7 @@
   "input_window": 24,
   "output_window": 12,
 
-  "metrics": ["MAE", "RMSE", "MAPE"],
+  "metrics": ["MAE", "RMSE", "masked_MAPE"],
 
   "scaler": "standard",
   "load_external": false,
